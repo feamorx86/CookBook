@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/font_size_medium"
+        android:gravity="center_horizontal"
+        android:text="Холодец"
+        />
+    <TextView
+        android:id="@+id/list_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/colorSecondaryDark"
+        android:textSize="@dimen/font_size_small"
+
+        android:text="1-2-3-4-5-6-7-8-9-10-11-12"
+        android:ellipsize="end"
+        android:maxLines="3"
+        />
+    <LinearLayout
+        android:id="@+id/list_item_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/list_item_time_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_small"
+
+            android:padding="5dp"
+            android:text="Время: "
+            android:ellipsize="end"
+            android:maxLines="2"
+            />
+        <LinearLayout
+            android:id="@+id/list_item_timer_views_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/list_item_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:textColor="@color/color_1"
+                android:textSize="@dimen/font_size_small"
+
+                android:text="40:20"
+                />
+            <TextView
+                android:id="@+id/list_item_time_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:textColor="@color/color_2"
+                android:textSize="@dimen/font_size_small"
+
+                android:text="40:20"
+                />
+            <TextView
+                android:id="@+id/list_item_time_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/font_size_small"
+
+                android:text="40:20"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
