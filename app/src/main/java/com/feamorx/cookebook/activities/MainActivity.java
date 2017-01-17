@@ -16,6 +16,7 @@ import com.feamorx.cookebook.fragments.MainScreenFragment;
 import com.feamorx.cookebook.R;
 import com.feamorx.cookebook.fragments.SettingsFragment;
 import com.feamorx.cookebook.fragments.CookNowFragment;
+import com.feamorx.cookebook.fragments.SetupTimerFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -138,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 selectMenu(item);
             }
             break;
-            case R.id.nav_now:
+            case R.id.nav_now: {
                 android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
                 if (cookNowListFragment == null) {
@@ -147,7 +148,19 @@ public class MainActivity extends AppCompatActivity {
                 transaction.replace(R.id.content_main, cookNowListFragment, "now");
                 transaction.commit();
                 selectMenu(item);
-                break;
+            }
+            break;
+            case R.id.nav_search: {
+                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+//                if (cookNowListFragment == null) {
+//                    cookNowListFragment = new CookNowListFragment();
+//                }
+                transaction.replace(R.id.content_main, SetupTimerFragment.getInstance(null), "timer");
+                transaction.commit();
+                selectMenu(item);
+            }
+            break;
             case R.id.nav_exit:
                 finish();
                 break;

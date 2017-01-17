@@ -10,4 +10,7 @@
     <dimen name="font_size_small">16sp</dimen>
     <dimen name="font_size_medium">20sp</dimen>
     <dimen name="font_size_large">26sp</dimen>
+
+    <dimen name="timer_font_size">40sp</dimen>
+    <dimen name="timer_number_font_size">50sp</dimen>
 </resources>
